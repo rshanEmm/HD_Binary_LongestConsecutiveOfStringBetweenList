@@ -17,13 +17,13 @@ The task is to find the node with minimum absolute difference with given target 
 Also provide the complexity of the algorithm
 
 Example: 
-
+<pre>
     20
    /  \
   12   32
  /\    /\
 8  18 25 38
-
+</pre>
 // For above binary search tree
 Input  :  k = 32
 Output :  32
