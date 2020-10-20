@@ -7,7 +7,7 @@ I did find a logical issue with the test data on the first task as cleared up be
 my findings in the comments of my code. I also explain any areas I felt that needed some sort of supporting written dialog for the decisions I made. 
 
 GitHub check in : https://github.com/rshanEmm/HD_Binary_LongestConsecutiveOfStringBetweenList
-
+<pre>
 *******************************************************************************************************
 Task 1:
 *******************************************************************************************************
@@ -17,20 +17,20 @@ The task is to find the node with minimum absolute difference with given target 
 Also provide the complexity of the algorithm
 
 Example: 
-<pre>
+
     20
    /  \
   12   32
  /\    /\
 8  18 25 38
-</pre>
+
 // For above binary search tree
 Input  :  k = 32
 Output :  32
 
 Input  :  k = 14
 Output :  18 ( 4 positions away)
-Canaidate corrected output: 12 (2 positions away)
+Candidate corrected output: 12 (2 positions away)
  
 
 Input  :  k = 21
@@ -71,3 +71,4 @@ List1 = ["sun", "moon", "flower", "fruit", "apple", "star", "rose", "fruit", "li
 List2 = ["sun", "moon", "flower", "apple", "star", "rose", "fruit"]
 
 Result: [ "apple", "star", "rose", "fruit"]
+</pre>
