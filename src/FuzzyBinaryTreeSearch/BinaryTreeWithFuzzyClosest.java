@@ -50,17 +50,7 @@ public class BinaryTreeWithFuzzyClosest {
             closest = current;
             return true;
         }
-        /*
-            My answer : containsNodeRecursive already searches the binary tree on a O(n) complexity , why not just
-            add little code to capture the node. Add a boolean for to gate the tracker. Not much different then
-            tracking packets during a given event with Wireshark (yes I have tinkered with it). So I give this the same
-            O(n).
-
-            Add a little like-factory design here to discretely sweep up the closest node when need comes, skip when
-            it is not.
-
-            Bruce Lee said it best : Be like Water
-         */
+      
         if(fuzzy){
             captureTheClosestNode(current, value);
         }
@@ -70,28 +60,6 @@ public class BinaryTreeWithFuzzyClosest {
                 ? containsNodeRecursive(current.left, value, fuzzy)
                 : containsNodeRecursive(current.right, value, fuzzy);
     }
-
-
-    /*
-        We want the number of positions away (distance) from the value, least amount of work gets the win.
-        Negative or position placement from the value like on a graph or a map. Hence the need to standardize the
-        positions to be positive no matter the difference, that way we can compare. Hence the placement cannot be less
-        then zero.Least distance between node and value is what we seek.
-        (hence minimum absolute difference not next highest value)
-
-            Example
-
-            value (k) = 14
-
-            Node 12 (2 positions away) and node 18 (4 positions away)
-
-            Uncomment debug statements into the block below and look for yourself.
-            int diffClosest = (closest.value - value )< 0 ? (closest.value - value ) * -1 : (closest.value - value);
-            int diffCurrent = (current.value - value ) < 0 ? (current.value - value ) * -1 : (current.value - value);
-            System.out.println(" ========= diffClosest : " + diffClosest);
-            System.out.println(" ========= diffCurrent : " + diffCurrent);
-            if(diffClosest > diffCurrent){ closest = current;}
-    */
     private void captureTheClosestNode(Node current, int value){
         if(closest == null) {
             closest = current;
