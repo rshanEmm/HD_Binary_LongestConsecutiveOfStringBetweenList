@@ -43,7 +43,11 @@ public class BinaryTreeWithFuzzyClosest {
             closest = current;
             return true;
         }
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 7971d4888585be74f2ebb98b0d107a043f0b51b5
         if(fuzzy){
             captureTheClosestNode(current, value);
         }
@@ -53,7 +57,10 @@ public class BinaryTreeWithFuzzyClosest {
                 ? containsNodeRecursive(current.left, value, fuzzy)
                 : containsNodeRecursive(current.right, value, fuzzy);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7971d4888585be74f2ebb98b0d107a043f0b51b5
     private void captureTheClosestNode(Node current, int value){
         if(closest == null) {
             closest = current;

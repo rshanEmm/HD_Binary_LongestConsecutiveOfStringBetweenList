@@ -1,7 +1,7 @@
 # HD_Binary_LongestConsecutiveOfStringBetweenList
 A certain client coding challenge and my answers to the task
 
-Atos Syntel requested that I get this done as soon as possible, went ahead and got the challenge code functioning by 11:14 pm EST, started at 5:08pm. One handed might I add.
+Recruiting firm requested that I get this done as soon as possible, went ahead and got the challenge code functioning by 11:14 pm EST, started at 5:08pm. One handed might I add.
 
 I did find a logical issue with the test data on the first task as cleared up below. Please inform the client. I explain the details of
 my findings in the comments of my code. I also explain any areas I felt that needed some sort of supporting written dialog for the decisions I made. 
